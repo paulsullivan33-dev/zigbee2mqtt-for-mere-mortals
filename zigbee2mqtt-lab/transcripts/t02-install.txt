@@ -1,0 +1,29 @@
+$ npx --yes pnpm@11.26.0 install --frozen-lockfile
+  (the lab Node has no corepack on its path, so the release-pinned
+   pnpm — package.json says "packageManager": "pnpm@11.26.0" — was run
+   through npx. On a machine with corepack, `corepack enable` puts
+   the same pnpm on the path. Registry requests took about 10 s each
+   in this sandbox, and the first attempt was cut short while
+   linking; the identical command was run again and pnpm resumed
+   from its store.)
+
+.../node_modules/unix-dgram install: gyp ERR! command "/usr/bin/node" ".../node-gyp.js" "rebuild"
+.../node_modules/unix-dgram install: gyp ERR! node -v v24.22.1
+.../node_modules/unix-dgram install: gyp ERR! node-gyp -v v11.2.0
+.../node_modules/unix-dgram install: gyp ERR! not ok
+.../node_modules/unix-dgram install: Failed
+
+Done in 30.4s using pnpm v11.26.0
+
+  (unix-dgram is an optional native module used only by the syslog
+   logging transport. Its compile failed in this sandbox, pnpm
+   carried on, and the default console/file logging this guide uses
+   never touches it — both bridge starts in t06 and t07 ran on this
+   exact install. node_modules afterwards: 207 MB.)
+
+$ npx --yes pnpm@11.26.0 run build
+$ tsc && node index.js writehash
+  (no output, exit code 0; dist/ created — including
+   dist/util/settings.schema.json, the release's own settings schema,
+   against which chapter 5 key names and chapter 6 adapter list
+   were checked)

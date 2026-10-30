@@ -1,0 +1,6 @@
+libcjson1_1.7.17-1_amd64.deb
+libdlt2_2.18.10-10_amd64.deb
+libmosquitto1_2.0.18-1build3_amd64.deb
+libwebsockets19t64_4.3.3-1.1build3_amd64.deb
+mosquitto-clients_2.0.18-1build3_amd64.deb
+mosquitto_2.0.18-1build3_amd64.deb

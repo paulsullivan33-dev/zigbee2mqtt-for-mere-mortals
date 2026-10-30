@@ -1,0 +1,5 @@
+$ curl -sLO https://github.com/Koenkk/zigbee2mqtt/archive/refs/tags/2.14.2.tar.gz   (as z2m.tar.gz)
+$ sha256sum z2m.tar.gz
+88204c51eebc24c2aa9f8bd26ce128c1f9e795e10592b7ba1793582855ebc990  z2m.tar.gz
+$ ls -la z2m.tar.gz
+973645 z2m.tar.gz

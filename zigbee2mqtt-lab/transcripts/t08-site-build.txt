@@ -1,0 +1,6 @@
+$ mkdocs build --strict   (site staged exactly as the deploy workflow stages it:
+   root *.md into docs/, README.md as docs/index.md, lab folder copied in)
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: /home/hatch/workspace/zigbee2mqtt-for-mere-mortals/site
+INFO    -  Documentation built in 1.85 seconds
+[Re-run after adding this transcript to the lab folder: mkdocs build --strict again, Documentation built in 1.81 seconds, exit code 0, no warnings. The only other output is a banner from the Material theme package itself about its own future, which is not a build warning.]

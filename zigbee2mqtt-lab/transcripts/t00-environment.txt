@@ -1,0 +1,6 @@
+$ date -u; node --version; npm --version; uname -sr
+Fri Oct 30 04:46:00 UTC 2026
+v24.22.1
+10.9.4
+Linux 7.0.0-39-generic
+Description:	Ubuntu 24.04.5 LTS

@@ -1,0 +1,17 @@
+Starting Zigbee2MQTT without watchdog.
+[2026-10-30 04:53:30] info: 	z2m: Logging to console, file (filename: log.log)
+[2026-10-30 04:53:30] info: 	z2m: Starting Zigbee2MQTT version 2.14.2 (commit #unknown)
+[2026-10-30 04:53:30] info: 	z2m: Starting zigbee-herdsman (10.10.0)
+[2026-10-30 04:53:31] info: 	zh:zstack:znp: Opening SerialPort with {"path":"/dev/pts/1","baudRate":115200,"rtscts":false,"autoOpen":false}
+[2026-10-30 04:53:31] info: 	zh:zstack:znp: Serialport opened
+[2026-10-30 04:53:31] info: 	zh:zstack:znp: Writing CC2530/CC2531 skip bootloader payload
+[2026-10-30 04:53:32] info: 	zh:zstack:znp: Skip bootloader for CC2652/CC1352
+[2026-10-30 04:53:32] error: 	z2m: Error while starting zigbee-herdsman
+[2026-10-30 04:53:32] error: 	z2m: Failed to start zigbee-herdsman
+[2026-10-30 04:53:32] error: 	z2m: Check https://www.zigbee2mqtt.io/guide/installation/20_zigbee2mqtt-fails-to-start_crashes-runtime.html for possible solutions
+[2026-10-30 04:53:32] error: 	z2m: Exiting...
+[2026-10-30 04:53:32] error: 	z2m: Error: Error: Inappropriate ioctl for device, cannot set
+[2026-10-30 04:53:32] info: 	zh:zstack:znp: Port closed
+NodeError: write after end
+    at writeAfterEnd (/home/hatch/workspace/zigbee2mqtt-labwork/zigbee2mqtt-2.14.2/node_modules/.pnpm/readable-stream@3.6.2/node_modules/readable-stream/lib/_stream_writable.js:264:12)
+[the process then printed a Node.js stack trace from its logging library as it exited; exit code 1]

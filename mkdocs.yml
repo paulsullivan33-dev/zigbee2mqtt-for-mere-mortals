@@ -1,0 +1,29 @@
+site_name: Zigbee2MQTT for Mere Mortals
+site_description: Bringing Zigbee bulbs and sensors into MQTT and Home Assistant without a vendor hub. One USB coordinator, one bridge program and one small broker replace a shelf of branded hubs and cloud accounts, with the startup logs shown honestly and the limits stated plainly.
+site_url: https://paulsullivan33-dev.github.io/zigbee2mqtt-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text CC BY 4.0, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What Zigbee2MQTT Is: what-zigbee2mqtt-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Choosing a Coordinator: choosing-a-coordinator.md
+  - Installing Zigbee2MQTT: installing.md
+  - The Broker and the Configuration File: the-broker-and-config.md
+  - First Start — and the Missing Radio: first-start.md
+  - Pairing Your First Device: pairing.md
+  - Topics, Payloads and Commands: topics-and-commands.md
+  - Home Assistant Discovery: home-assistant.md
+  - Groups, Scenes and Bindings: groups-and-bindings.md
+  - The Map, the Channel and Over-the-Air Updates: network-and-updates.md
+  - Recipes: recipes.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

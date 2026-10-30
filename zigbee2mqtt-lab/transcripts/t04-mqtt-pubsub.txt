@@ -1,0 +1,13 @@
+$ mosquitto_sub (correct password, background) + mosquitto_pub
+lab/check broker and credentials work
+pub exit=0
+
+$ mosquitto_pub with the WRONG password
+Connection error: Connection Refused: not authorised.
+Error: The connection was refused.
+pub exit=5
+
+$ mosquitto_pub with NO credentials (anonymous)
+Connection error: Connection Refused: not authorised.
+Error: The connection was refused.
+pub exit=5

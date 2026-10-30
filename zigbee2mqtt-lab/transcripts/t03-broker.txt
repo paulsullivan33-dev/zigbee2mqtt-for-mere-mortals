@@ -1,0 +1,26 @@
+$ mosquitto -c mosquitto.conf   (broker log, first start)
+1793335824: Warning: Mosquitto should not be run as root/administrator.
+1793335824: mosquitto version 2.0.18 starting
+1793335824: Config loaded from mosquitto.conf.
+1793335824: Warning: File /home/hatch/workspace/zigbee2mqtt-labwork/mosquitto-passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /home/hatch/workspace/zigbee2mqtt-labwork/mosquitto-passwd`.
+1793335824: Opening ipv4 listen socket on port 1883.
+1793335824: mosquitto version 2.0.18 running
+1793335829: New connection from 127.0.0.1:50018 on port 1883.
+1793335829: New client connected from 127.0.0.1:50018 as auto-C1A59A06-32F3-DD44-99DE-834825BC0F9B (p2, c1, k60, u'z2m-bridge').
+1793335830: New connection from 127.0.0.1:50020 on port 1883.
+1793335830: New client connected from 127.0.0.1:50020 as auto-E74AD189-9906-DBA3-E625-25320CBAB509 (p2, c1, k60, u'z2m-bridge').
+1793335830: Client auto-E74AD189-9906-DBA3-E625-25320CBAB509 disconnected.
+1793335834: Client auto-C1A59A06-32F3-DD44-99DE-834825BC0F9B disconnected.
+1793335834: New connection from 127.0.0.1:50030 on port 1883.
+1793335834: Client auto-06122EB1-3169-D123-D6E1-28DDD611514B disconnected, not authorised.
+1793335834: New connection from 127.0.0.1:50038 on port 1883.
+1793335834: Client auto-CE148B7D-A947-807B-CA60-F13BC269B78A disconnected, not authorised.
+
+$ cat mosquitto.conf
+user root
+listener 1883 127.0.0.1
+allow_anonymous false
+password_file /home/hatch/workspace/zigbee2mqtt-labwork/mosquitto-passwd
+persistence false
+log_dest stdout

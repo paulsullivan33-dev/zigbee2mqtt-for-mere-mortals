@@ -1,0 +1,31 @@
+# Zigbee2MQTT configuration — the lab's real file, built up in chapter 5.
+homeassistant:
+  enabled: false
+
+frontend:
+  enabled: true
+  port: 8080
+
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://localhost:1883
+  user: z2m-bridge
+  password: lab-password-123
+
+serial:
+  port: /dev/ttyACM0
+  adapter: zstack
+
+advanced:
+  log_level: info
+  channel: 11
+
+[After the first start (transcript t06), the same file began
+with one added line — the bridge stamps the configuration
+format's own version into it and keeps step-by-step backups
+(configuration_backup_v1.yaml … v4) plus migration notes in
+the same folder:
+
+version: 5
+
+Everything else in the file was as written above.]
